@@ -1,0 +1,19 @@
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('./font-src/Inter.ttf');
+}
+
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('./font-src/Inter-Italic.ttf');
+}
+
+.font-inter{
+  font-family: 'Inter';
+}

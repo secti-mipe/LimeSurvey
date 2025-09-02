@@ -113,6 +113,15 @@ $coreFonts = array(
         ),
     ),
 
+    'font-inter' => array(
+        'title' => 'Inter',
+        'type' => 'core',
+        'devBaseUrl' => 'assets/fonts/',
+        'basePath' => 'fonts',
+        'css' => array(
+            'inter.css',
+        ),
+    ),
 
     // see: https://www.w3schools.com/cssref/css_websafe_fonts.asp
     'font-websafe' => array(
