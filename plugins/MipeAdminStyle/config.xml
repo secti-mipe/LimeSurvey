@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <metadata>
+        <name>MipeAdminStyle</name>
+        <type>plugin</type>
+        <creationDate>2025-08-18</creationDate>
+        <lastUpdate>2025-08-18</lastUpdate>
+        <author>Cristovam</author>
+        <email>tbd@gmail.com</email>
+        <authorUrl>https://github.com/cristovamsegundo</authorUrl>
+        <version>1.0.0</version>
+        <license>All rights reserved</license>
+        <description><![CDATA[Allows customization of the LimeSurvey admin interface CSS, while preserving future changes]]></description>
+    </metadata>
+
+    <compatibility>
+        <version>6.1</version>
+    </compatibility>
+
+    <updaters disabled="disabled">
+    </updaters>
+</config>

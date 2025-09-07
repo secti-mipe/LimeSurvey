@@ -239,3 +239,6 @@ docker/
 /geckodriver-v0.23.0-linux64.tar.gz
 /yarn.lock
 /geckodriver.exe
+
+# MIPE
+!/plugins/MipeAdminStyle/
