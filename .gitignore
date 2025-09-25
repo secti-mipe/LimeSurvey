@@ -242,3 +242,4 @@ docker/
 
 # MIPE
 !/plugins/MipeAdminStyle/
+!/plugins/MipeAdminContent/
