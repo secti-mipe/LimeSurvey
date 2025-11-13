@@ -1,0 +1,29 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/var/www/html
+    entrypoint: ["php", "-S", "app:8000"]
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    depends_on:
+      - db
+
+  db:
+    image: mysql:9.5.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${LIME_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${LIME_MYSQL_DATABASE}
+      MYSQL_USER: ${LIME_MYSQL_USER}
+      MYSQL_PASSWORD: ${LIME_MYSQL_PASSWORD}
+    volumes:
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
