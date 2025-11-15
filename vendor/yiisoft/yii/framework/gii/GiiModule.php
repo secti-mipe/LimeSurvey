@@ -188,7 +188,8 @@ class GiiModule extends CWebModule
 	 */
 	protected function allowIp($ip)
 	{
-		if(empty($this->ipFilters))
+		$host = explode(':', $_SERVER['HTTP_HOST'] ?? '')[0];
+		if('localhost' == $host || empty($this->ipFilters))
 			return true;
 		foreach($this->ipFilters as $filter)
 		{
