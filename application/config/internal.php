@@ -75,15 +75,6 @@ $internalConfig = array(
         'HelloWorld' => array(
           'class' => 'modules.root.HelloWorld.HelloWorldModule',
         ),
-
-        /* Here you can unlock Gii
-        'gii'=>array(
-            'class'=>'system.gii.GiiModule',
-            'password'=>'YOURPASSWORD',
-            'newFileMode'=>0666,
-            'newDirMode'=>0777,
-        ),
-        */
     ),
     'params' => array(
         'defaultPageSize' => 10, // Default page size for most of the grids
