@@ -17,6 +17,10 @@ RUN apk update && apk add \
 RUN docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype \
     && docker-php-ext-install pdo_mysql gd intl zip ldap
 
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 WORKDIR /var/www/html
 
 RUN chmod 775 /var/www/html/
+
+CMD ["php-fpm"]

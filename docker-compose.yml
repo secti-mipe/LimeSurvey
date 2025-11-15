@@ -21,6 +21,7 @@ services:
       MYSQL_PASSWORD: ${LIME_MYSQL_PASSWORD}
     volumes:
       - ./mysql/init:/docker-entrypoint-initdb.d
+      - ./mysql/data:/var/lib/mysql:delegated
     networks:
       - app-network
 

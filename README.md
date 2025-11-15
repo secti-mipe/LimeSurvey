@@ -63,6 +63,12 @@ LimeSurvey is perfect for you if you are...
 - Latest PHP version with php-fpm, mbstring, gd2, imap, ldap, zip, zlib, and database drivers
 - Latest MariaDB or MySQL version
 
+##  Running with Docker Compose
+Check the docker-compose.yml and setup the env vars. After that, execute all the services with:
+```bash
+$ docker-compose up --build
+```
+
 ## ☁️ You don’t want to host yourself? Let us do it for you!
 Skip the technical setup and focus on creating and analyzing surveys. With our hosted SaaS, you get a fast, easy-to-use online survey platform that ensures security and complies with privacy regulations like GDPR. We take care of all the hosting and maintenance, so you don’t have to worry about it and can scale away: 
 👉 [Create free online survey](https://www.limesurvey.org/)!
